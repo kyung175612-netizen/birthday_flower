@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/2608/2608946.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
     <main>
@@ -17,11 +18,19 @@
             <h1>나의 탄생화 찾기</h1>
         </div>
         <div class="contents">
-            <input id="user_birthday" placeholder="태어난 달을 숫자로 입력해주세요.">
-            <button id="birthday_result_btn">나의 꽃과 꽃말 만나기</button>
+            <input id="user_birthday" placeholder="태어난 달을 숫자로 입력해주세요." onclick="birthday_month()">
+            <button id="birthday_result_btn" onclick="popupShow()">나의 꽃과 꽃말 만나기</button>
             <!-- a태그는 클릭 시 다른 페이지로 이동 -->
             <!-- button 태그 클릭 시 범용기능 동적표현 -->
         </div>
+        <!-- 나의 꽃과 꽃말 만나기 버튼 클릭 시, 실행 화면-->
+        <div class="box_popup">
+            <p class="date">birthday Month 12</p>
+            <p class="flower_mean">꽃말 : 자기애, 자존심, 외로움</p>
+            <h2>당신의 탄생화는<br><em>'수선화'</em> 입니다.</h2>
+        </div>
+            <!-- 글쓰기 팝업 뒤 배경 -->
+        <div class="popup_bg" onclick="popupHide()"></div>
     </main>
 </body>
 </html>
