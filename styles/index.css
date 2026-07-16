@@ -62,11 +62,11 @@ main .contents #birthday_result_btn {
 main .box_popup {
     background-color: rgba(255, 255, 255, 0.8);
     display: flex;
-    width: 355px; height: 258px;
+    width: 355px; min-height: 258px;
     flex-flow:column nowrap;
     justify-content:space-between;
     padding:43px 52px 43px 52px;
-    text-align: center;
+    text-align: center; /* display:flex, flex-flow:column nowrap; gap:20px */
     position: absolute; left:8%; top:30%;
     z-index: 90;
     border-radius: 30px;
